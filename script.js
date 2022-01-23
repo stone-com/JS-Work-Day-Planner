@@ -51,6 +51,8 @@ $(document).ready(function() {
         localStorage.setItem('4Pm Task', task16);
         var task17 = $('#17').val();
         localStorage.setItem('5Pm Task', task17);
+
+        $( "#dialog" ).dialog(); //show dialog/modal saying saved successfully
     });
 
     //display saved lcalstorage data on page on reload
