@@ -50,5 +50,26 @@ $(document).ready(function() {
         localStorage.setItem('4Pm Task', task16);
         var task17 = $('#17').val();
         localStorage.setItem('5Pm Task', task17);
-    })
+    });
+
+    //display saved lcalstorage data on page on reload
+    //create variables for each localstorage entry then set textarea values to those saved values
+    var savedTask9 = localStorage.getItem('9Am Task');
+    $('#9').val(savedTask9);
+    var savedTask10 = localStorage.getItem('10Am Task');
+    $('#10').val(savedTask10);
+    var savedTask11 = localStorage.getItem('11Am Task');
+    $('#11').val(savedTask11);
+    var savedTask12 = localStorage.getItem('12Pm Task');
+    $('#12').val(savedTask12);
+    var savedTask13 = localStorage.getItem('1Pm Task');
+    $('#13').val(savedTask13);
+    var savedTask14 = localStorage.getItem('2Pm Task');
+    $('#14').val(savedTask14);
+    var savedTask15 = localStorage.getItem('3Pm Task');
+    $('#15').val(savedTask15);
+    var savedTask16 = localStorage.getItem('4Pm Task');
+    $('#16').val(savedTask16);
+    var savedTask17 = localStorage.getItem('5Pm Task');
+    $('#17').val(savedTask17);
 })
