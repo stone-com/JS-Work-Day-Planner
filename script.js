@@ -91,9 +91,11 @@ function clearStorage() {
     $('#17').val('');
 
 };
-
+//event handler for clicking clear button
 $('.clearBtn').click(clearStorage);
 
+
+//dark mode toggle. adds and removes dark classes and changes button text based off of current state
 $('#darktoggle').on('click', function() {
     if( $('body').hasClass('dark')) {
         $('body').removeClass('dark');

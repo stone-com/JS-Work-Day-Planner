@@ -8,9 +8,12 @@ textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: black;
   border-left: 1px solid black;
   padding: 10px;
+  border-bottom: 1px solid white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .jumbotron {
@@ -35,11 +38,6 @@ textarea {
   height: 80px;
   margin-bottom: 7px;
 
-}
-textarea {
-  border-bottom: 1px solid white;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
 }
 
 .hour {
@@ -83,10 +81,15 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+/* hides modal when not in use */
 .hidden {
   display: none;
 }
 
+
+
+/* dark mode styling */
 .dark {
   background-color: black;
   color: white;
