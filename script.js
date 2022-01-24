@@ -94,3 +94,18 @@ function clearStorage() {
 
 $('.clearBtn').click(clearStorage);
 
+$('#darktoggle').on('click', function() {
+    if( $('body').hasClass('dark')) {
+        $('body').removeClass('dark');
+        $('.jumbotron').removeClass('dark');
+        $('.row > .hour').removeClass('hour-dark');
+        $('#darktoggle').text("Off");
+    } else {
+        $('body').addClass('dark');
+        $('.jumbotron').addClass('dark');
+        $('.row > .hour').addClass('hour-dark');
+        $('#darktoggle').text('On');
+
+    }
+})
+
