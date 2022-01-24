@@ -6,7 +6,7 @@ const currentTime = $('#currentDay') //create variable referencing p element in 
 $(document).ready(function() {
     //create variable for current time using moment js
 
-    var rightNow = moment().format("dddd, MMMM Do YYYY");
+    var rightNow = moment().format("dddd, MMMM Do YYYY, h:mm a");
 
     //display the current time/date on the DOM
 
