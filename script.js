@@ -12,10 +12,10 @@ $(document).ready(function() {
 
         currentTime.text(rightNow) 
     
-        //variable for current time
-        var day = new Date();
-        //get current hour using getHours method, returns time in 24 hour format
-        var hourNow = day.getHours(); 
+ 
+        //get current hour moment hour method, returns time in 24 hour format
+        var hourNow = moment().hour();
+        console.log(hourNow);
 
         //loop through hours of 9-5, comparing time to current 'hourNow' variable, adding classes for past,present,future. used to change color of row depending on time
         for(var i = 9; i < 18; i++) {
@@ -110,4 +110,5 @@ $('#darktoggle').on('click', function() {
 
     }
 })
+
 
