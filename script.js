@@ -1,7 +1,5 @@
 const currentTime = $('#currentDay') //create variable referencing p element in jumbotron, used to display current date
 
-
-
 //run this function as soon as the page loads and is 'ready'
 $(document).ready(function() {
     //create variable for current time using moment js
@@ -80,16 +78,7 @@ $(document).ready(function() {
 //clear localstorage function, set all textarea values back to empty string
 function clearStorage() {
     localStorage.clear();
-    $('#9').val('');
-    $('#10').val('');
-    $('#11').val('');
-    $('#12').val('');
-    $('#13').val('');
-    $('#14').val('');
-    $('#15').val('');
-    $('#16').val('');
-    $('#17').val('');
-
+    $('.row > textarea').val('');
 };
 //event handler for clicking clear button
 $('.clearBtn').click(clearStorage);
